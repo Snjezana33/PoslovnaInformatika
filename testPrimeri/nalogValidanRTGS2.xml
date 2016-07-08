@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NalogZaPlacanje xmlns="http://banka.com/nalogZaPlacanje">
+    <ID_poruke>321312</ID_poruke>
+    <Duznik-Nalogodavac>Firma B</Duznik-Nalogodavac>
+    <Svrha_placanja>PI test RTGS Nalog 2</Svrha_placanja>
+    <Primalac-Poverilac>Firma A</Primalac-Poverilac>
+    <Datum_naloga>2013-05-08</Datum_naloga>
+    <Datum_valute>2013-06-21</Datum_valute>
+    <Racun_duznika>222222222222222222</Racun_duznika>
+    <Model_zaduzenja>90</Model_zaduzenja>
+    <Poziv_na_broj_zaduzenja>344323424324</Poziv_na_broj_zaduzenja>
+    <Racun_poverioca>111222222222222273</Racun_poverioca>
+    <Model_odobrenja>13</Model_odobrenja>
+    <Poziv_na_broj_odobrenja>31321321321321</Poziv_na_broj_odobrenja>
+    <Iznos>250452.30</Iznos>
+    <Oznaka_valute>RSD</Oznaka_valute>
+    <Hitno>false</Hitno>
+</NalogZaPlacanje>

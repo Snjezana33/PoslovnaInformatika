@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>ANALITIKA_IZVODA</tableName>
+    <tableLabel>Analitika izvoda</tableLabel>
+    <columns>
+        <column>
+            <columnName>BAR_RACUN</columnName>
+            <columnLabel>Broj računa</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>DSR_IZVOD</columnName>
+            <columnLabel>Broj izvoda</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>DSR_DATUM</columnName>
+            <columnLabel>Datum prometa</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>ASI_BROJSTAVKE</columnName>
+            <columnLabel>Broj stavke</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>VA_SIFRA</columnName>
+            <columnLabel>Šifra valute</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>ASI_DUZNIK</columnName>
+            <columnLabel>Dužnik - nalogodavac</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>ASI_SVRHA</columnName>
+            <columnLabel>Svrha plaćanja</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>ASI_POVERILAC</columnName>
+            <columnLabel>Poverilac - primalac</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>ASI_DATPRI</columnName>
+            <columnLabel>Datum prijema</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>ASI_RACDUZ</columnName>
+            <columnLabel>Račun dužnika</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>ASI_MODZAD</columnName>
+            <columnLabel>Model zaduženja</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>ASI_PBZAD</columnName>
+            <columnLabel>Poziv na broj zaduženja</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>ASI_RACPOV</columnName>
+            <columnLabel>Račun poverioca</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>ASI_MODODOB</columnName>
+            <columnLabel>Model odobrenja</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>ASI_PBODO</columnName>
+            <columnLabel>Poziv na broj odobrenja</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>ASI_HITNO</columnName>
+            <columnLabel>Hitno?</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.Boolean</columnType>
+        </column>
+        <column>
+            <columnName>ASI_IZNOS</columnName>
+            <columnLabel>Iznos</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>ASI_TIPGRESKE</columnName>
+            <columnLabel>Tip greške</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>ASI_STATUS</columnName>
+            <columnLabel>Status</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+    </columns>
+    <zoom>
+        <zoomItem>
+            <table>DNEVNO_STANJE_RACUNA</table>
+            <className>DnevnoStanjeRacunaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>BAR_RACUN</from>
+                    <to>BAR_RACUN</to>
+                </zoomElement>
+                <zoomElement>
+                    <from>DSR_IZVOD</from>
+                    <to>DSR_IZVOD</to>
+                </zoomElement>
+                <zoomElement>
+                    <from>DSR_DATUM</from>
+                    <to>DSR_DATUM</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+        <zoomItem>
+            <table>VALUTA</table>
+            <className>ValutaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>VA_SIFRA</from>
+                    <to>VA_SIFRA</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+    </zoom>
+    <next>
+        <nextItem>
+            <table>VEZA_MEDJUBANKARSKOG_NALOGA_I_STAVKI</table>
+            <className>VezaMedjubankarskogNalogaIStavkiDialog</className>
+            <elements>
+                <nextElement>
+                    <from>BAR_RACUN</from>
+                    <to>BAR_RACUN</to>
+                </nextElement>
+                <nextElement>
+                    <from>DSR_IZVOD</from>
+                    <to>DSR_IZVOD</to>
+                </nextElement>
+                <nextElement>
+                    <from>DSR_DATUM</from>
+                    <to>DSR_DATUM</to>
+                </nextElement>
+                <nextElement>
+                    <from>ASI_BROJSTAVKE</from>
+                    <to>ASI_BROJSTAVKE</to>
+                </nextElement>
+            </elements>
+        </nextItem>
+    </next>
+    <excludeFromTable/>
+</tableProperties>

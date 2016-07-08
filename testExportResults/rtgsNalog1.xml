@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RTGS_nalog xmlns="http://banka.com/RTGSnalog">
+    <ID_poruke>2</ID_poruke>
+    <SWIFT_kod_banke_duznika>INTSRSBG</SWIFT_kod_banke_duznika>
+    <Obracunski_racun_banke_duznika>000432424352345235</Obracunski_racun_banke_duznika>
+    <SWIFT_kod_banke_poverioca>CODERS22</SWIFT_kod_banke_poverioca>
+    <Obracunski_racun_banke_poverioca>000123456789123431</Obracunski_racun_banke_poverioca>
+    <Duznik-nalogodavac>Firma B</Duznik-nalogodavac>
+    <Svrha_placanja>PI test RTGS Nalog 2</Svrha_placanja>
+    <Primalac-poverilac>Firma A</Primalac-poverilac>
+    <Datum_naloga>2013-05-08</Datum_naloga>
+    <Datum_valute>2013-06-21</Datum_valute>
+    <Racun_duznika>222222222222222222</Racun_duznika>
+    <Model_zaduzenja>90</Model_zaduzenja>
+    <Poziv_na_broj_zaduzenja>344323424324</Poziv_na_broj_zaduzenja>
+    <Racun_poverioca>111111111111111111</Racun_poverioca>
+    <Model_odobrenja>13</Model_odobrenja>
+    <Poziv_na_broj_odobrenja>31321321321321</Poziv_na_broj_odobrenja>
+    <Iznos>251452.30</Iznos>
+    <Sifra_valute>RSD</Sifra_valute>
+</RTGS_nalog>

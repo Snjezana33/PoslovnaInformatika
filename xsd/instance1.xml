@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NalogZaPlacanje xmlns="http://banka.com/nalogZaPlacanje"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://banka.com/nalogZaPlacanje file:/C:/Users/Chakmi/Documents/PoslovnaProjekat/PoslovnaInformatikaBanka/xsd/nalogZaPlacanje.xsd">
+    <ID_poruke>ID_poruke0</ID_poruke>
+    <Duznik-Nalogodavac>Duznik-Nalogodavac0</Duznik-Nalogodavac>
+    <Svrha_placanja>Svrha_placanja0</Svrha_placanja>
+    <Primalac-Poverilac>Primalac-Poverilac0</Primalac-Poverilac>
+    <Datum_naloga>2006-05-04</Datum_naloga>
+    <Datum_valute>2006-05-04</Datum_valute>
+    <Racun_duznika>000000000000000000</Racun_duznika>
+    <Model_zaduzenja>0</Model_zaduzenja>
+    <Poziv_na_broj_zaduzenja>0</Poziv_na_broj_zaduzenja>
+    <Racun_poverioca>000000000000000000</Racun_poverioca>
+    <Model_odobrenja>0</Model_odobrenja>
+    <Poziv_na_broj_odobrenja>0</Poziv_na_broj_odobrenja>
+    <Iznos>0.00</Iznos>
+    <Oznaka_valute>Ozn</Oznaka_valute>
+    <Hitno>false</Hitno>
+</NalogZaPlacanje>

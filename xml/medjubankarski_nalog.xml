@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>MEDJUBANKARSKI_NALOG</tableName>
+    <tableLabel>Međubankarski nalog</tableLabel>
+    <columns>
+        <column>
+            <columnName>MBN_ID</columnName>
+            <columnLabel>ID naloga</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>BANK_SIFRA_POVERIOC</columnName>
+            <columnLabel>Šifra banke poverioca</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>BANK_SIFRA_DUZNIK</columnName>
+            <columnLabel>Šifra banke dužnika</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>MBN_TIP</columnName>
+            <columnLabel>Tip naloga</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>MBN_DATUM</columnName>
+            <columnLabel>Datum naloga</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>MBN_POSLATO</columnName>
+            <columnLabel>Poslato?</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.Boolean</columnType>
+        </column>
+    </columns>
+    <zoom>
+        <zoomItem>
+            <table>BANKA</table>
+            <className>BankaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>BANK_SIFRA</from>
+                    <to>BANK_SIFRA_POVERIOC</to>
+                </zoomElement>
+                <zoomElement>
+                    <from>BANK_SIFRA</from>
+                    <to>BANK_SIFRA_DUZNIK</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+    </zoom>
+    <next>
+        <nextItem>
+            <table>VEZA_MEDJUBANKARSKOG_NALOGA_I_STAVKI</table>
+            <className>VezaMedjubankarskogNalogaIStavkiDialog</className>
+            <elements>
+                <nextElement>
+                    <from>MBN_ID</from>
+                    <to>MBN_ID</to>
+                </nextElement>
+            </elements>
+        </nextItem>
+    </next>
+    <excludeFromTable/>
+</tableProperties>

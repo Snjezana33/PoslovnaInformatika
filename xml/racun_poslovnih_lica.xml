@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>RACUN_POSLOVNIH_LICA</tableName>
+    <tableLabel>Račun poslovnih lica</tableLabel>
+    <columns>
+        <column>
+            <columnName>BAR_RACUN</columnName>
+            <columnLabel>Broj računa</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_ID</columnName>
+            <columnLabel>ID broj poslovnog lica</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>VA_SIFRA</columnName>
+            <columnLabel>Šifra valute</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>BANK_SIFRA</columnName>
+            <columnLabel>Šifra banke</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>BAR_DATOTV</columnName>
+            <columnLabel>Datum otvaranja</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>BAR_VAZI</columnName>
+            <columnLabel>Važeći?</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.Boolean</columnType>
+        </column>
+    </columns>
+    <zoom>
+        <zoomItem>
+            <table>POSLOVNO_LICE</table>
+            <className>PoslovnoLiceDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>L_ID</from>
+                    <to>L_ID</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+        <zoomItem>
+            <table>VALUTA</table>
+            <className>ValutaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>VA_SIFRA</from>
+                    <to>VA_SIFRA</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+        <zoomItem>
+            <table>BANKA</table>
+            <className>BankaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>BANK_SIFRA</from>
+                    <to>BANK_SIFRA</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+    </zoom>
+    <next>
+        <nextItem>
+            <table>DNEVNO_STANJE_RACUNA</table>
+            <className>DnevnoStanjeRacunaDialog</className>
+            <elements>
+                <nextElement>
+                    <from>BAR_RACUN</from>
+                    <to>BAR_RACUN</to>
+                </nextElement>
+            </elements>
+        </nextItem>
+        <nextItem>
+            <table>UKIDANJE</table>
+            <className>UkidanjeDialog</className>
+            <elements>
+                <nextElement>
+                    <from>BAR_RACUN</from>
+                    <to>BAR_RACUN</to>
+                </nextElement>
+            </elements>
+        </nextItem>
+    </next>
+    <excludeFromTable/>
+</tableProperties>

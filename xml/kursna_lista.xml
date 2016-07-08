@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>KURSNA_LISTA</tableName>
+    <tableLabel>Kursna lista</tableLabel>
+    <columns>
+        <column>
+            <columnName>BANK_SIFRA</columnName>
+            <columnLabel>Šifra banke</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>KL_DATUM</columnName>
+            <columnLabel>Datum</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>KL_BROJ</columnName>
+            <columnLabel>Broj kursne liste</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>KL_DATPR</columnName>
+            <columnLabel>Primenjuje se od</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+    </columns>
+    <zoom>
+        <zoomItem>
+            <table>BANKA</table>
+            <className>BankaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>BANK_SIFRA</from>
+                    <to>BANK_SIFRA</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements>
+                <lookUpElement>
+                    <name>BANK_NAZIV</name>
+                    <label>Naziv banke</label>
+                    <type>java.lang.String</type>
+                </lookUpElement>
+            </lookUpElements>
+        </zoomItem>
+    </zoom>
+    <next>
+        <nextItem>
+            <table>KURS_U_VALUTI</table>
+            <className>KursUValutiDialog</className>
+            <elements>
+                <nextElement>
+                    <from>BANK_SIFRA</from>
+                    <to>BANK_SIFRA</to>
+                </nextElement>
+                <nextElement>
+                    <from>KL_DATUM</from>
+                    <to>KL_DATUM</to>
+                </nextElement>
+            </elements>
+        </nextItem>
+    </next>
+    <excludeFromTable/>
+</tableProperties>

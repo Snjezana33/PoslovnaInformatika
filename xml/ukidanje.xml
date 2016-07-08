@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>UKIDANJE</tableName>
+    <tableLabel>Ukidanje</tableLabel>
+    <columns>
+        <column>
+            <columnName>BAR_RACUN</columnName>
+            <columnLabel>Broj računa</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>UK_DATUKIDANJA</columnName>
+            <columnLabel>Datum ukidanja</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>UK_NARACUN</columnName>
+            <columnLabel>Sredstva se prenose na račun</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+    </columns>
+    <zoom>
+        <zoomItem>
+            <table>RACUN_POSLOVNIH_LICA</table>
+            <className>RacunPoslovnihLicaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>BAR_RACUN</from>
+                    <to>BAR_RACUN</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+    </zoom>
+    <next/>
+    <excludeFromTable/>
+</tableProperties>

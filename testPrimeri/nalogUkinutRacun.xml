@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NalogZaPlacanje xmlns="http://banka.com/nalogZaPlacanje">
+    <ID_poruke>32111</ID_poruke>
+    <Duznik-Nalogodavac>Duznik 1</Duznik-Nalogodavac>
+    <Svrha_placanja>Neka Svrha</Svrha_placanja>
+    <Primalac-Poverilac>Primalac 1</Primalac-Poverilac>
+    <Datum_naloga>2013-06-02</Datum_naloga>
+    <Datum_valute>2013-06-30</Datum_valute>
+    <Racun_duznika>111222222222222273</Racun_duznika>
+    <Model_zaduzenja>9</Model_zaduzenja>
+    <Poziv_na_broj_zaduzenja>3213</Poziv_na_broj_zaduzenja>
+    <Racun_poverioca>111333333333333336</Racun_poverioca>
+    <Model_odobrenja>8</Model_odobrenja>
+    <Poziv_na_broj_odobrenja>8788789899888</Poziv_na_broj_odobrenja>
+    <Iznos>500.32</Iznos>
+    <Oznaka_valute>RSD</Oznaka_valute>
+    <Hitno>false</Hitno>
+</NalogZaPlacanje>

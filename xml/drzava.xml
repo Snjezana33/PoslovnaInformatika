@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>DRZAVA</tableName>
+    <tableLabel>Država</tableLabel>
+    <columns>
+        <column>
+            <columnName>DR_SIFRA</columnName>
+            <columnLabel>Šifra države</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>DR_NAZIV</columnName>
+            <columnLabel>Naziv države</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+    </columns>
+    <zoom/>
+    <next>
+        <nextItem>
+            <table>VALUTA</table>
+            <className>ValutaDialog</className>
+            <elements>
+                <nextElement>
+                    <from>DR_SIFRA</from>
+                    <to>DR_SIFRA</to>
+                </nextElement>
+            </elements>
+        </nextItem>
+    </next>
+    <excludeFromTable/>
+</tableProperties>

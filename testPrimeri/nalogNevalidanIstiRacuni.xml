@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NalogZaPlacanje xmlns="http://banka.com/nalogZaPlacanje">
+    <ID_poruke>34243242</ID_poruke>
+    <Duznik-Nalogodavac>Vista</Duznik-Nalogodavac>
+    <Svrha_placanja>Microsoft</Svrha_placanja>
+    <Primalac-Poverilac>Sedmica</Primalac-Poverilac>
+    <Datum_naloga>2013-05-08</Datum_naloga>
+    <Datum_valute>2013-06-09</Datum_valute>
+    <Racun_duznika>111111111111111113</Racun_duznika>
+    <Model_zaduzenja>98</Model_zaduzenja>
+    <Poziv_na_broj_zaduzenja>213</Poziv_na_broj_zaduzenja>
+    <Racun_poverioca>111111111111111113</Racun_poverioca>
+    <Model_odobrenja>21</Model_odobrenja>
+    <Poziv_na_broj_odobrenja>133123</Poziv_na_broj_odobrenja>
+    <Iznos>321.00</Iznos>
+    <Oznaka_valute>RSD</Oznaka_valute>
+    <Hitno>true</Hitno>
+</NalogZaPlacanje>

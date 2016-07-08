@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>KURS_U_VALUTI</tableName>
+    <tableLabel>Kurs u valuti</tableLabel>
+    <columns>
+        <column>
+            <columnName>BANK_SIFRA</columnName>
+            <columnLabel>Šifra banke</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>KL_DATUM</columnName>
+            <columnLabel>Datum</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>KLS_RBR</columnName>
+            <columnLabel>Redni broj</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>VA_SIFRA_PREMA</columnName>
+            <columnLabel>Šifra valute prema</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>VA_SIFRA_OSNOVNA</columnName>
+            <columnLabel>Šifra osnovne valute</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>KLS_KUPOVNI</columnName>
+            <columnLabel>Kupovni</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>KLS_SREDNJI</columnName>
+            <columnLabel>Srednji</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>KLS_PRODAJNI</columnName>
+            <columnLabel>Prodajni</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+    </columns>
+    <zoom>
+        <zoomItem>
+            <table>KURSNA_LISTA</table>
+            <className>KursnaListaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>BANK_SIFRA</from>
+                    <to>BANK_SIFRA</to>
+                </zoomElement>
+                <zoomElement>
+                    <from>KL_DATUM</from>
+                    <to>KL_DATUM</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+        <zoomItem>
+            <table>VALUTA</table>
+            <className>ValutaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>VA_SIFRA</from>
+                    <to>VA_SIFRA_PREMA</to>
+                </zoomElement>
+                <zoomElement>
+                    <from>VA_SIFRA</from>
+                    <to>VA_SIFRA_OSNOVNA</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+    </zoom>
+    <next/>
+    <excludeFromTable/>
+</tableProperties>

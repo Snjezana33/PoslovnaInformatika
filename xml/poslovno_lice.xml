@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>POSLOVNO_LICE</tableName>
+    <tableLabel>Poslovno lice</tableLabel>
+    <columns>
+        <column>
+            <columnName>L_ID</columnName>
+            <columnLabel>ID broj</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>L_ADRESA</columnName>
+            <columnLabel>Adresa</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_EMAIL</columnName>
+            <columnLabel>E-mail</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_WEB</columnName>
+            <columnLabel>Web adresa</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_TELEFON</columnName>
+            <columnLabel>Telefon</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_FAX</columnName>
+            <columnLabel>Fax</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_PRAVNO</columnName>
+            <columnLabel>Pravno lice?</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.Boolean</columnType>
+        </column>
+        <column>
+            <columnName>L_JMBG</columnName>
+            <columnLabel>JMBG fizičkog lica</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_IME</columnName>
+            <columnLabel>Ime fizičkog lica</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_PREZIME</columnName>
+            <columnLabel>Prezime fizičkog lica</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_PIB</columnName>
+            <columnLabel>PIB pravnog lica</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>L_NAZIV</columnName>
+            <columnLabel>Naziv pravnog lica</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+    </columns>
+    <zoom/>
+    <next>
+        <nextItem>
+            <table>RACUN_POSLOVNIH_LICA</table>
+            <className>RacunPoslovnihLicaDialog</className>
+            <elements>
+                <nextElement>
+                    <from>L_ID</from>
+                    <to>L_ID</to>
+                </nextElement>
+            </elements>
+        </nextItem>
+    </next>
+    <excludeFromTable>
+        <excludeColumn>
+            <columnName>L_EMAIL</columnName>
+        </excludeColumn>
+    </excludeFromTable>
+</tableProperties>

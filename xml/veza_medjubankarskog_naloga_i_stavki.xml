@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>VEZA_MEDJUBANKARSKOG_NALOGA_I_STAVKI</tableName>
+    <tableLabel>Veza međubankarskog naloga i stavki</tableLabel>
+    <columns>
+        <column>
+            <columnName>BAR_RACUN</columnName>
+            <columnLabel>Broj računa</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>DSR_IZVOD</columnName>
+            <columnLabel>Broj izvoda</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>DSR_DATUM</columnName>
+            <columnLabel>Datum prometa</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>ASI_BROJSTAVKE</columnName>
+            <columnLabel>Broj stavke</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>MBN_ID</columnName>
+            <columnLabel>ID naloga</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+    </columns>
+    <zoom>
+        <zoomItem>
+            <table>ANALITIKA_IZVODA</table>
+            <className>AnalitikaIzvodaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>BAR_RACUN</from>
+                    <to>BAR_RACUN</to>
+                </zoomElement>
+                <zoomElement>
+                    <from>DSR_IZVOD</from>
+                    <to>DSR_IZVOD</to>
+                </zoomElement>
+                <zoomElement>
+                    <from>DSR_DATUM</from>
+                    <to>DSR_DATUM</to>
+                </zoomElement>
+                <zoomElement>
+                    <from>ASI_BROJSTAVKE</from>
+                    <to>ASI_BROJSTAVKE</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+        <zoomItem>
+            <table>MEDJUBANKARSKI_NALOG</table>
+            <className>MedjubankarskiNalogDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>MBN_ID</from>
+                    <to>MBN_ID</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+    </zoom>
+    <next/>
+    <excludeFromTable/>
+</tableProperties>

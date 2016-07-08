@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NalogZaPlacanje xmlns="http://banka.com/nalogZaPlacanje">
+    <ID_poruke>321312</ID_poruke>
+    <Duznik-Nalogodavac>Firma A</Duznik-Nalogodavac>
+    <Svrha_placanja>XWS test</Svrha_placanja>
+    <Primalac-Poverilac>Firma B</Primalac-Poverilac>
+    <Datum_naloga>2013-05-08</Datum_naloga>
+    <Datum_valute>2013-06-11</Datum_valute>
+    <Racun_duznika>222222222222222222</Racun_duznika>
+    <Model_zaduzenja>90</Model_zaduzenja>
+    <Poziv_na_broj_zaduzenja>344323424324</Poziv_na_broj_zaduzenja>
+    <Racun_poverioca>111111111111111113</Racun_poverioca>
+    <Model_odobrenja>13</Model_odobrenja>
+    <Poziv_na_broj_odobrenja>31321321321321</Poziv_na_broj_odobrenja>
+    <Iznos>452.30</Iznos>
+    <Oznaka_valute>RSD</Oznaka_valute>
+    <Hitno>false</Hitno>
+</NalogZaPlacanje>

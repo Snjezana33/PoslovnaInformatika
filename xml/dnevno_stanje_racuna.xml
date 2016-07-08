@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableProperties>
+    <tableName>DNEVNO_STANJE_RACUNA</tableName>
+    <tableLabel>Dnevno stanje računa</tableLabel>
+    <columns>
+        <column>
+            <columnName>BAR_RACUN</columnName>
+            <columnLabel>Broj računa</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.lang.String</columnType>
+        </column>
+        <column>
+            <columnName>DSR_IZVOD</columnName>
+            <columnLabel>Broj izvoda</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>DSR_DATUM</columnName>
+            <columnLabel>Datum prometa</columnLabel>
+            <isPK>true</isPK>
+            <columnType>java.sql.Date</columnType>
+        </column>
+        <column>
+            <columnName>DSR_PRETHODNO</columnName>
+            <columnLabel>Prethodno stanje</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>DSR_UKORIST</columnName>
+            <columnLabel>Promet u korist</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>DSR_NATERET</columnName>
+            <columnLabel>Promet na teret</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+        <column>
+            <columnName>DSR_NOVOSTANJE</columnName>
+            <columnLabel>Novo stanje</columnLabel>
+            <isPK>false</isPK>
+            <columnType>java.math.BigDecimal</columnType>
+        </column>
+    </columns>
+    <zoom>
+        <zoomItem>
+            <table>RACUN_POSLOVNIH_LICA</table>
+            <className>RacunPoslovnihLicaDialog</className>
+            <zoomElements>
+                <zoomElement>
+                    <from>BAR_RACUN</from>
+                    <to>BAR_RACUN</to>
+                </zoomElement>
+            </zoomElements>
+            <lookUpElements/>
+        </zoomItem>
+    </zoom>
+    <next>
+        <nextItem>
+            <table>ANALITIKA_IZVODA</table>
+            <className>AnalitikaIzvodaDialog</className>
+            <elements>
+                <nextElement>
+                    <from>BAR_RACUN</from>
+                    <to>BAR_RACUN</to>
+                </nextElement>
+                <nextElement>
+                    <from>DSR_IZVOD</from>
+                    <to>DSR_IZVOD</to>
+                </nextElement>
+                <nextElement>
+                    <from>DSR_DATUM</from>
+                    <to>DSR_DATUM</to>
+                </nextElement>
+            </elements>
+        </nextItem>
+    </next>
+    <excludeFromTable/>
+</tableProperties>
